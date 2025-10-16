@@ -53,8 +53,7 @@ This partnership ensures end-to-end client support — from **legal clearance** 
 ---
 
 ## 📁 Project Structure
-tkmuneneadvocates/ │ ├── docs/                        # Public folder for GitHub Pages │   ├── index.html               # Homepage │   ├── about.html               # About Us page │   ├── services.html            # List of practice areas │   ├── contact.html             # Contact & WhatsApp form │   ├── terms.html               # Terms of Service │   ├── privacy.html             # Privacy Policy │   ├── assets/ │   │   ├── css/ │   │   │   └── style.css        # Main stylesheet │   │   ├── js/ │   │   │   └── script.js        # Core JavaScript │   │   ├── images/ │   │   │   ├── logo.png │   │   │   ├── favicon.ico │   │   │   └── partners/ │   │   │       └── queenstar.png │   │   └── certs/               # Placeholder for certifications │   └── README.md                # Documentation (this file) │ ├── LICENSE                      # Legal and usage license └── CNAME                        # Custom domain (tkmuneneadvocates.com)
----
+
 
 ## 🌐 Website Preview
 
@@ -102,11 +101,6 @@ Folder: /docs
 
 
 4. Save and wait for the deployment link to go live.
-
-
-5. Optionally connect your custom domain (tkmuneneadvocates.com) under Custom Domain.
-
-
 
 
 ---
