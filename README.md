@@ -57,7 +57,7 @@ This partnership ensures end-to-end client support — from **legal clearance** 
 
 ## 🌐 Website Preview
 
-🔗 **Live Preview:** [https://theverifiedgeek.github.io/tkmuneneadvocates/](https://theverifiedgeek.github.io/tkmuneneadvocates/)  
+🔗 **Live Preview:** [https://theverifiedgeek.github.io/tk-munene-advocates/](https://theverifiedgeek.github.io/tk-munene-advocates/)  
 (*This link will automatically update once deployed on GitHub Pages or linked with your custom domain — `tkmuneneadvocates.com`.*)
 
 ---
