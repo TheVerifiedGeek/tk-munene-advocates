@@ -1,1 +1,0 @@
-document.addEventListener('DOMContentLoaded',function(){console.log('TK Munene Advocates site loaded');});
