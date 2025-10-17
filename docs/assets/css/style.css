@@ -1,42 +1,43 @@
-:root {
-  --primary-dark: #0a1a2f;
-  --primary-blue: #153e75;
-  --accent-silver: #c0c0c0;
-  --text-light: #f5f5f5;
-  --text-muted: #b3b3b3;
-  --highlight: #5088ff;
-  --transition: 0.3s ease-in-out;
-}
-
+/* General Layout */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--primary-dark);
-  color: var(--text-light);
   margin: 0;
-  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #e0e0e0;
+  background-color: #0c1a2a;
   line-height: 1.6;
 }
 
-/* Header */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Navigation */
 header {
-  background: var(--primary-blue);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(12, 26, 42, 0.95);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 15px 0;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  font-size: 1.6em;
+  color: silver;
+  font-weight: 700;
 }
 
-.logo img {
-  height: 50px;
-  margin-right: 10px;
+.logo span {
+  color: #00aaff;
 }
 
 nav ul {
@@ -46,96 +47,104 @@ nav ul {
 }
 
 nav ul li a {
-  color: var(--accent-silver);
+  color: #cfd8dc;
   text-decoration: none;
   font-weight: 500;
-  transition: var(--transition);
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: var(--highlight);
+  color: #00aaff;
 }
 
 /* Hero */
 .hero {
+  height: 90vh;
+  background: linear-gradient(to bottom, rgba(12,26,42,0.7), rgba(12,26,42,0.95)),
+              url('office-photo.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background: linear-gradient(to right, #0b2345, #142850);
-  padding: 100px 20px;
+  padding-top: 70px;
 }
 
-.hero h2 {
-  font-size: 2.8rem;
+.hero-content h1 {
+  font-size: 2.5em;
+  color: silver;
   margin-bottom: 15px;
-  color: var(--accent-silver);
 }
 
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
+.hero-content p {
+  color: #b0bec5;
+  font-size: 1.2em;
 }
 
-.btn {
-  background: var(--highlight);
-  color: white;
-  padding: 12px 25px;
-  border-radius: 30px;
+.btn-primary {
+  display: inline-block;
+  background: #00aaff;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 6px;
   text-decoration: none;
-  font-weight: 600;
-  transition: var(--transition);
+  margin-top: 20px;
+  transition: background 0.3s;
 }
 
-.btn:hover {
-  background: var(--accent-silver);
-  color: var(--primary-dark);
+.btn-primary:hover {
+  background: #007acc;
 }
 
 /* Sections */
-section {
-  padding: 60px 10%;
+.section {
+  padding: 80px 0;
 }
 
-.about img {
-  width: 100%;
-  border-radius: 10px;
-  margin-top: 20px;
-  box-shadow: 0 4px 20px rgba(255,255,255,0.1);
+.section.alt {
+  background: #132a40;
 }
 
-.services ul {
-  list-style: square;
-  padding-left: 30px;
+h2 {
+  text-align: center;
+  color: #b0bec5;
+  margin-bottom: 30px;
 }
 
-.partners p, .terms p {
-  color: var(--text-muted);
+/* Services */
+.service-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
-.contact a {
-  color: var(--highlight);
+.service-list li {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: silver;
+}
+
+/* Buttons */
+.btn-outline {
+  display: inline-block;
+  padding: 10px 25px;
+  color: #00aaff;
+  border: 1px solid #00aaff;
+  border-radius: 6px;
   text-decoration: none;
+  transition: all 0.3s;
 }
 
-.contact a:hover {
-  color: var(--accent-silver);
+.btn-outline:hover {
+  background: #00aaff;
+  color: #fff;
 }
 
 /* Footer */
 footer {
-  background: #081423;
-  color: var(--text-light);
-  padding: 40px 10%;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.footer-links h3 {
-  color: var(--highlight);
-  margin-bottom: 10px;
+  background: #091522;
+  padding: 40px 0;
+  color: #9ea7ad;
+  text-align: center;
 }
 
 .footer-links ul {
@@ -143,25 +152,26 @@ footer {
   padding: 0;
 }
 
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
 .footer-links ul li a {
-  color: var(--accent-silver);
+  color: #00aaff;
   text-decoration: none;
-  transition: var(--transition);
+  transition: opacity 0.3s;
 }
 
 .footer-links ul li a:hover {
-  color: var(--highlight);
+  opacity: 0.8;
 }
 
-.footer-bottom {
-  border-top: 1px solid #2a3b55;
-  text-align: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  font-size: 0.9rem;
+.footer-rights p {
+  margin: 5px 0;
 }
 
-.footer-bottom a {
-  color: var(--highlight);
+.footer-rights a {
+  color: silver;
   text-decoration: none;
+  font-weight: 500;
 }
